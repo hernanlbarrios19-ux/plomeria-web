@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plomería en Tu Ciudad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .whatsapp-float:hover {
+      background-color: #1ebe57;
+    }
+    .whatsapp-icon {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+
+  <header class="bg-blue-700 text-white text-center p-6">
+    <h1 class="text-3xl font-bold">Plomería en Tu Ciudad</h1>
+    <p class="mt-2 text-lg">🚰 Urgencias 24/7 • Rápido • Confiable</p>
+    <a href="tel:+541112345678" 
+       class="inline-block mt-4 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold">
+       📞 Llamar ahora
+    </a>
+  </header>
+
+  <nav class="bg-blue-900 text-white flex justify-center space-x-6 py-3">
+    <a href="#servicios" class="hover:text-orange-400">Servicios</a>
+    <a href="#nosotros" class="hover:text-orange-400">Nosotros</a>
+    <a href="#contacto" class="hover:text-orange-400">Contacto</a>
+  </nav>
+
+  <section id="servicios" class="max-w-5xl mx-auto p-6">
+    <h2 class="text-2xl font-bold text-center mb-6">Nuestros Servicios</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white shadow-lg p-6 rounded-xl text-center">🚰 Reparación de fugas</div>
+      <div class="bg-white shadow-lg p-6 rounded-xl text-center">🛠 Destapar caños</div>
+      <div class="bg-white shadow-lg p-6 rounded-xl text-center">🚿 Instalación de sanitarios</div>
+      <div class="bg-white shadow-lg p-6 rounded-xl text-center">⚡ Emergencias 24hs</div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="bg-white p-6 mt-6 shadow-lg rounded-xl max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Sobre Nosotros</h2>
+    <p>Con más de 10 años de experiencia, ofrecemos un servicio de plomería rápido, económico y confiable en toda la ciudad. 
+       Nuestro compromiso es brindarte soluciones inmediatas y de calidad.</p>
+  </section>
+
+  <section id="contacto" class="max-w-4xl mx-auto p-6 mt-6">
+    <h2 class="text-2xl font-bold mb-4 text-center">Contacto</h2>
+    <p class="text-center mb-4">Complete el formulario y nos pondremos en contacto a la brevedad:</p>
+    
+    <form action="https://formspree.io/f/tu-id-aqui" method="POST" class="bg-white p-6 shadow-lg rounded-xl space-y-4">
+      <input type="text" name="nombre" placeholder="Nombre completo" required class="w-full border p-3 rounded-lg">
+      <input type="email" name="email" placeholder="Correo electrónico" required class="w-full border p-3 rounded-lg">
+      <textarea name="mensaje" rows="5" placeholder="Escriba su consulta..." required class="w-full border p-3 rounded-lg"></textarea>
+      <button type="submit" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 rounded-lg">
+        📩 Enviar mensaje
+      </button>
+    </form>
+  </section>
+
+  <footer class="bg-blue-700 text-white text-center p-4 mt-6">
+    © 2025 Plomería en Tu Ciudad - Todos los derechos reservados
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/541112345678?text=Hola,%20necesito%20un%20plomero%20urgente"
+     class="whatsapp-float" target="_blank">
+    <i class="whatsapp-icon">💬</i>
+  </a>
+
+</body>
+</html>
